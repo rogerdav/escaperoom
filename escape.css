@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-evenly;
+
+    
+}
+
+.holding {
+    display: flex;
+    /* width: %; */
+    align-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+.box {
+    width: 10%;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+#main {
+    /* margin: 0 auto;
+    width: 50%;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+input {
+    font-size: 2em;
+    text-align: center;
+}
+.showMain {
+    margin: 0 auto;
+    width: 50%;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
+}
+.videoBox {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    margin: 0 auto;
+}
+.button {
+    width: 25%;
+    
+    margin: 0 auto;
+}
