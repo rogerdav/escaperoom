@@ -12,24 +12,27 @@
     <div id="main" class="showMain">
         <div class="text" >Enter the Password</div>
         <div class="holding">
-            <input id="letter1" class="box"  type="password"/>
-            <input id="letter2" class="box"  type="password"/>
-            <input id="letter3" class="box"  type="password"/>
-            <input id="letter4" class="box"  type="password"/>
-            <input id="letter5" class="box"  type="password"/>
-            <input id="letter6" class="box"  type="password"/>
+            <input id="letter1" class="box"  type="text"/>
+            <input id="letter2" class="box"  type="text"/>
+            <input id="letter3" class="box"  type="text"/>
+            <input id="letter4" class="box"  type="text"/>
+            <input id="letter5" class="box"  type="text"/>
+            <input id="letter6" class="box"  type="text"/>
             
         </div>
     </div>
-    <div class="hide" id = "video2">
-        <iframe src="https://drive.google.com/file/d/1IiGlWZU3abZIldaNZa7CgHm1rrzSpcaF/preview" width="800" height="600" allow="autoplay" autoplay="true"></iframe>
-        
+    <div class="videoBox" id = "video2">
+        <video width="800" controls autoplay>
+            <source src="/v2.mp4" type="video/mp4">
+        </video>
     </div>
-    <div class="hide" id = "video1">
-        <iframe src="https://drive.google.com/file/d/1UjQdhG0i99qfySrKikbf3jxHFg5bWD_H/preview" width="800" height="600" allow="autoplay" autoplay="true"></iframe>
-        
+    <div class="hide" id = "video1" >
+        <video width="800" controls autoplay>
+            <source src="/v1.mp4" type="video/mp4">
+        </video>
+       
     </div>
-    <button class="hide" id="nextButton">Next</button>
+    <button class="videoBox" id="nextButton">Next</button>
     <script src="escape.js"></script>
 </body>
 </html>
