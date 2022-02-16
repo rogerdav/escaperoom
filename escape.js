@@ -8,7 +8,26 @@ let mainEl = document.getElementById('main');
 let video2 = document.getElementById('video2');
 let video = document.getElementById('video1');
 let nextButton = document.getElementById('nextButton');
+let vid1playing = document.getElementById('vid1playing');
+let vid2playing = document.getElementById('vid2playing');
 console.log('element 6 ', in6);
+
+vid1playing.ontimeupdate = function () {PrintTime1()};
+vid2playing.ontimeupdate = function () {PrintTime2()};
+function PrintTime2 () {
+    if (vid2playing.currentTime > 15) {
+        nextButton.setAttribute('class', 'button');
+    } else {
+        nextButton.setAttribute('class', 'hide');
+    }
+}
+function PrintTime1 () {
+    if (vid1playing.currentTime > 19) {
+        nextButton.setAttribute('class', 'button');
+    } else {
+        nextButton.setAttribute('class', 'hide');
+    }
+}
 
 
 window.onload = function() {
@@ -90,7 +109,9 @@ in6.addEventListener('keyup', function(e){
         mainEl.setAttribute("class", "hide")
         video.setAttribute('class', '');
         video.setAttribute('class', 'videoBox');
-        nextButton.setAttribute('class', 'button');
+        vid1playing.currentTime = 0;
+        vid1playing.play();
+        
         
     //     alert('Correct')
     }
@@ -100,11 +121,14 @@ in6.addEventListener('keyup', function(e){
         mainEl.setAttribute("class", "hide");
         video2.setAttribute('class', '');
         video2.setAttribute('class', 'videoBox');
-        nextButton.setAttribute('class', 'button')
+        vid2playing.currentTime = 0;
+        vid2playing.play();
+        
         
     //     alert('Correct')
     }
 })
+
 
 
 nextButton.addEventListener('click', function (){
